@@ -24,8 +24,10 @@ function calcularNivel(vitorias, derrotas) {
 }
 
 // Exemplo de uso da função
-const vitorias = 122;
-const derrotas = 22;
+var readline = require ('readline-sync');
+
+const vitorias = readline.questionInt('Informe a quantidade de vitorias: ');
+const derrotas = readline.questionInt('Informe a quantidade de derrotas: ');;
 
 const resultado = calcularNivel(vitorias, derrotas);
 
